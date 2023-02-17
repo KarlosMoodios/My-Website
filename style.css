@@ -1,0 +1,129 @@
+/* 
+Created by Karl Moody 17/02/2023.
+A cascading style sheet to add style to my html files.
+*/
+
+body {
+    background-color: #232023;
+    margin: 30px;
+}
+
+#active {
+    background-color: #00F;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    float: left;
+    display: block;
+    border-color: cyan;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+#active a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#nav {
+    transition: background-color 1s;
+    background-color:rgb(180, 180, 180);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    float: left;
+    display: block;
+    border-color: cyan;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+#nav:hover {
+    background-color: #44F;
+    text-decoration: none;
+}
+#nav a {
+    text-decoration: none;
+}
+
+p a:where(:not(:hover)) {
+    text-decoration: none;
+  }
+  
+  nav a {
+    /* Works now! */
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+p { 
+    color: black;
+    font-size: 20px;
+    font-family: Arial;
+    margin: 0%;
+}
+
+#red:first-letter{
+    color: red;
+    font-size: 30px;
+}
+
+#Go {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}
+
+button[type="button"] {
+    background-color: rgb(180, 180, 180);
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+select {
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+div p:first-child {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.select-breed {
+    width: max-content;
+    border-color: cyan;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);;
+    padding: 10px;
+}
+
+#welcome {
+    width: auto;
+    border-color: cyan;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 50px;
+    padding: 10px;
+}
+
+
+
+
+
+/*
+content normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> ]+ ]?
+a|b|c
+choose to display the content as it is OR not at all OR choose from: (content replacement OR content list - either in a string or 
+counter format, however, one of them must be used)
+*/

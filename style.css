@@ -1,11 +1,17 @@
 /* 
-Created by Karl Moody 17/02/2023.
+Author: Karl Moody 
+Date: 17/02/2023.
 A cascading style sheet to add style to my html files.
 */
 
-body {
-    background-color: #232023;
-    margin: 30px;
+
+/* ID's */
+#bg {
+    background-image: url(picture.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #active {
@@ -13,60 +19,18 @@ body {
     color: #FFF;
     text-decoration: none;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    float: left;
-    display: block;
-    border-color: cyan;
+    padding: 0.5em;
+}
+
+#welcome {
+    width: auto;
+    border-color: tan;
     border-width: 5px;
     border-style: solid;
     border-radius: 10px;
-}
-#active a {
-    color: #FFF;
-    text-decoration: none;
-}
-
-#nav {
-    transition: background-color 1s;
-    background-color:rgb(180, 180, 180);
-    text-decoration: none;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 50px;
     padding: 10px;
-    float: left;
-    display: block;
-    border-color: cyan;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 10px;
-}
-#nav:hover {
-    background-color: #44F;
-    text-decoration: none;
-}
-#nav a {
-    text-decoration: none;
-}
-
-p a:where(:not(:hover)) {
-    text-decoration: none;
-  }
-  
-  nav a {
-    /* Works now! */
-    text-decoration: underline;
-}
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif
-}
-
-p { 
-    color: black;
-    font-size: 20px;
-    font-family: Arial;
-    margin: 0%;
 }
 
 #red:first-letter{
@@ -78,6 +42,99 @@ p {
     background-color: blue;
     color: white;
     font-size: 20px;
+}
+
+/* Classes */
+.select-breed {
+    width: max-content;
+    border-color: tan;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);;
+    padding: 10px;
+}
+
+.panel   {
+    width: max-content;
+    height: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color:  rgba(210, 180, 140, 0.9);
+    padding: 0.3em;
+    border-radius: 10px;
+}
+
+.target {
+  font-size: 14px;
+  transition: font-size 4s 1s;
+}
+
+.target:hover {
+  font-size: 26px;
+}
+
+/* Standard HTML */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+html, body {
+    height: 100%;
+    margin: 0px;
+    background-color:rgba(210, 180, 140, 0.9);
+}
+
+h1 {
+    font-family: Kalam, Arial;
+    font-size: 60px;
+    margin: 0px;
+    padding: 0.3em;
+}
+
+li  {
+    margin: 0px;
+    float: left;
+    display: block;
+}
+
+li a {
+    text-decoration: none;
+    border-color: tan;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    transition: background-color 1s;
+    background-color:rgb(180, 180, 180);
+    font-size: 20px;
+    padding: 0.5em;
+}
+li a:hover {
+    text-decoration: none;
+    transition: color 0.5s;
+    color: #FFF;
+    background-color: #44F;
+}
+
+p a:where(:not(:hover)) {
+    text-decoration: none;
+    color: #00F;
+  }
+  nav a {
+    text-decoration: underline;
+}
+
+p a:link{
+    color: #00F;
+  }
+  p a:visited{
+    color: #f0f;
+}
+
+p { 
+    font-size: 20px;
+    margin: 0%;
 }
 
 button[type="button"] {
@@ -95,31 +152,6 @@ select {
 div p:first-child {
     font-family: 'Times New Roman', Times, serif;
 }
-
-.select-breed {
-    width: max-content;
-    border-color: cyan;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.4);;
-    padding: 10px;
-}
-
-#welcome {
-    width: auto;
-    border-color: cyan;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
-    margin: 50px;
-    padding: 10px;
-}
-
-
-
-
 
 /*
 content normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> ]+ ]?
